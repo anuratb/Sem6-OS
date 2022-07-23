@@ -1,0 +1,679 @@
+anurat@anurat-Inspiron-3576:~/OS/assgn3$ ./a.out
+Enter number of producers and consumers respectively:2 8
+Enter number of matrices to multiply:2
+-----Job Generated--ProdId:2--PID:4193--MatrixID:59309-----
+Worker 2 working on Matrix  59309 10258 ... 0 0 0 0
+After Updattion,Matrix 59309 --> 0 0 Matrix 10258 --> 0 500
+-----Job Generated--ProdId:1--PID:4192--MatrixID:10258-----
+-----Job Generated--WorkerId:2--PID:4195--MatrixID:11668-----
+Worker 2 mutex over 1
+Enter mult pid  4195
+Worker 5 working on Matrix  59309 10258 ... 0 0 0 500
+After Updattion,Matrix 59309 --> 500 0 Matrix 10258 --> 0 0
+Worker 5 mutex over 1
+Enter mult pid  4198
+Worker 8 working on Matrix  59309 10258 ... 500 0 0 0
+After Updattion,Matrix 59309 --> 500 0 Matrix 10258 --> 0 500
+Worker 8 mutex over 1
+Enter mult pid  4201
+Worker 1 working on Matrix  59309 10258 ... 500 0 0 500
+After Updattion,Matrix 59309 --> 0 500 Matrix 10258 --> 500 0
+Worker 1 mutex over 1
+Enter mult pid  4194
+Worker 4 working on Matrix  59309 10258 ... 0 500 500 0
+After Updattion,Matrix 59309 --> 0 500 Matrix 10258 --> 500 500
+Worker 4 mutex over 1
+Enter mult pid  4197
+Worker 7 working on Matrix  59309 10258 ... 0 500 500 500
+After Updattion,Matrix 59309 --> 500 500 Matrix 10258 --> 500 0
+Worker 7 mutex over 1
+Enter mult pid  4200
+Worker 3 working on Matrix  59309 10258 ... 500 500 500 0
+After Updattion,Matrix 59309 --> 500 500 Matrix 10258 --> 500 500
+Worker 3 mutex over 1
+Enter mult pid  4196
+Worker 6 working on Matrix  59309 10258 ... 500 500 500 500
+After Updattion,Matrix 59309 --> 500 1000 Matrix 10258 --> 1000 500
+Worker 6 mutex over 1
+Enter mult pid  4199
+Exit mult pid  4197
+Exit mult pid  4200
+Exit mult pid  4201
+Worker  8  work over coutnt:  1 over matrices 59309 and 10258 added to matrix 11668
+Exit mult pid  4195
+Exit mult pid  4196
+Exit mult pid  4198
+Exit mult pid  4199
+Exit mult pid  4194
+Worker  5  work over coutnt:  2 over matrices 59309 and 10258 added to matrix 11668
+Worker  1  work over coutnt:  3 over matrices 59309 and 10258 added to matrix 11668
+Worker  4  work over coutnt:  4 over matrices 59309 and 10258 added to matrix 11668
+Worker  6  work over coutnt:  5 over matrices 59309 and 10258 added to matrix 11668
+Worker  7  work over coutnt:  6 over matrices 59309 and 10258 added to matrix 11668
+Worker  2  work over coutnt:  7 over matrices 59309 and 10258 added to matrix 11668
+Worker  3  work over coutnt:  8 over matrices 59309 and 10258 added to matrix 11668
+Matrix 59309,10258 popped by worker 3Job Done: 2 
+
+Worker 7 working on Matrix  11668 -2064792097 ... 0 32757 0 -2064183656
+After Updattion,Matrix 11668 --> 0 0 Matrix -2064792097 --> 32757 -156
+Worker 7 mutex over 1
+Enter mult pid  4200
+Worker 8 working on Matrix  11668 -2064792097 ... 0 32757 0 -156
+After Updattion,Matrix 11668 --> 0 0 Matrix -2064792097 --> 32757 344
+Worker 8 mutex over 1
+Enter mult pid  4201
+Main Diagonal Sum: 1379Time Taken: 10106604
+anurat@anurat-Inspiron-3576:~/OS/assgn3$ 
+
+
+anurat@anurat-Inspiron-3576:~/OS/assgn3$ ./a.out
+Enter number of producers and consumers respectively:4 10
+Enter number of matrices to multiply:4
+-----Job Generated--ProdId:1--PID:5429--MatrixID:61879-----
+-----Job Generated--ProdId:4--PID:5432--MatrixID:54897-----
+Worker 6 working on Matrix  61879 54897 ... 0 0 0 0
+After Updattion,Matrix 61879 --> 0 0 Matrix 54897 --> 0 500
+-----Job Generated--WorkerId:6--PID:5438--MatrixID:69662-----
+Worker 6 mutex over 1
+Enter mult pid  5438
+Worker 10 working on Matrix  61879 54897 ... 0 0 0 500
+After Updattion,Matrix 61879 --> 500 0 Matrix 54897 --> 0 0
+Worker 10 mutex over 1
+Enter mult pid  5442
+Worker 3 working on Matrix  61879 54897 ... 500 0 0 0
+After Updattion,Matrix 61879 --> 500 0 Matrix 54897 --> 0 500
+Worker 3 mutex over 1
+Enter mult pid  5435
+Worker 7 working on Matrix  61879 54897 ... 500 0 0 500
+After Updattion,Matrix 61879 --> 0 500 Matrix 54897 --> 500 0
+Worker 7 mutex over 1
+Enter mult pid  5439
+Worker 1 working on Matrix  61879 54897 ... 0 500 500 0
+After Updattion,Matrix 61879 --> 0 500 Matrix 54897 --> 500 500
+Worker 1 mutex over 1
+Enter mult pid  5433
+Exit mult pid  5435
+Process  5435 waiting for checkout ,main multiplication task completed
+
+Process  5435 entered for checkout ,main multiplication task completed
+
+Worker  3  work over coutnt:  1 over matrices 61879 and 54897 added to matrix 69662
+Exit mult pid  5439
+Exit mult pid  5433
+Exit mult pid  5438
+Exit mult pid  5442
+Worker 2 working on Matrix  61879 54897 ... 0 500 500 500
+After Updattion,Matrix 61879 --> 500 500 Matrix 54897 --> 500 0
+Worker 2 mutex over 1
+Enter mult pid  5434
+Worker 5 working on Matrix  61879 54897 ... 500 500 500 0
+After Updattion,Matrix 61879 --> 500 500 Matrix 54897 --> 500 500
+Worker 5 mutex over 1
+Enter mult pid  5437
+Worker 9 working on Matrix  61879 54897 ... 500 500 500 500
+After Updattion,Matrix 61879 --> 500 1000 Matrix 54897 --> 1000 500
+Worker 9 mutex over 1
+Enter mult pid  5441
+-----Job Generated--ProdId:2--PID:5430--MatrixID:63037-----
+Exit mult pid  5434
+Process  5434 waiting for checkout ,main multiplication task completed
+
+Process  5434 entered for checkout ,main multiplication task completed
+
+Worker  2  work over coutnt:  2 over matrices 61879 and 54897 added to matrix 69662
+Exit mult pid  5441
+Exit mult pid  5437
+Process  5433 waiting for checkout ,main multiplication task completed
+
+Process  5433 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  3 over matrices 61879 and 54897 added to matrix 69662
+-----Job Generated--ProdId:3--PID:5431--MatrixID:34810-----
+Process  5437 waiting for checkout ,main multiplication task completed
+
+Process  5437 entered for checkout ,main multiplication task completed
+
+Worker  5  work over coutnt:  4 over matrices 61879 and 54897 added to matrix 69662
+Process  5438 waiting for checkout ,main multiplication task completed
+
+Process  5438 entered for checkout ,main multiplication task completed
+
+Worker  6  work over coutnt:  5 over matrices 61879 and 54897 added to matrix 69662
+Process  5441 waiting for checkout ,main multiplication task completed
+
+Process  5441 entered for checkout ,main multiplication task completed
+
+Worker  9  work over coutnt:  6 over matrices 61879 and 54897 added to matrix 69662
+Process  5439 waiting for checkout ,main multiplication task completed
+
+Process  5439 entered for checkout ,main multiplication task completed
+
+Worker  7  work over coutnt:  7 over matrices 61879 and 54897 added to matrix 69662
+Process  5442 waiting for checkout ,main multiplication task completed
+
+Process  5442 entered for checkout ,main multiplication task completed
+
+Worker  10  work over coutnt:  8 over matrices 61879 and 54897 added to matrix 69662
+Matrix 61879,54897 popped by worker 10Job Done: 2 
+
+Worker 9 working on Matrix  69662 63037 ... 0 0 0 0
+After Updattion,Matrix 69662 --> 0 0 Matrix 63037 --> 0 500
+-----Job Generated--WorkerId:9--PID:5441--MatrixID:79622-----
+Worker 9 mutex over 1
+Enter mult pid  5441
+Worker 3 working on Matrix  69662 63037 ... 0 0 0 500
+After Updattion,Matrix 69662 --> 500 0 Matrix 63037 --> 0 0
+Worker 3 mutex over 1
+Enter mult pid  5435
+Worker 4 working on Matrix  69662 63037 ... 500 0 0 0
+After Updattion,Matrix 69662 --> 500 0 Matrix 63037 --> 0 500
+Worker 4 mutex over 1
+Enter mult pid  5436
+Worker 8 working on Matrix  69662 63037 ... 500 0 0 500
+After Updattion,Matrix 69662 --> 0 500 Matrix 63037 --> 500 0
+Worker 8 mutex over 1
+Enter mult pid  5440
+Worker 1 working on Matrix  69662 63037 ... 0 500 500 0
+After Updattion,Matrix 69662 --> 0 500 Matrix 63037 --> 500 500
+Worker 1 mutex over 1
+Enter mult pid  5433
+Exit mult pid  5440
+Exit mult pid  5436
+Exit mult pid  5435
+Worker 2 working on Matrix  69662 63037 ... 0 500 500 500
+After Updattion,Matrix 69662 --> 500 500 Matrix 63037 --> 500 0
+Worker 2 mutex over 1
+Enter mult pid  5434
+Worker 7 working on Matrix  69662 63037 ... 500 500 500 0
+After Updattion,Matrix 69662 --> 500 500 Matrix 63037 --> 500 500
+Worker 7 mutex over 1
+Enter mult pid  5439
+Exit mult pid  5433
+Exit mult pid  5441
+Worker 6 working on Matrix  69662 63037 ... 500 500 500 500
+After Updattion,Matrix 69662 --> 500 1000 Matrix 63037 --> 1000 500
+Worker 6 mutex over 1
+Enter mult pid  5438
+Exit mult pid  5434
+Process  5434 waiting for checkout ,main multiplication task completed
+
+Process  5434 entered for checkout ,main multiplication task completed
+
+Worker  2  work over coutnt:  1 over matrices 69662 and 63037 added to matrix 79622
+Exit mult pid  5439
+Exit mult pid  5438
+Process  5440 waiting for checkout ,main multiplication task completed
+
+Process  5440 entered for checkout ,main multiplication task completed
+
+Worker  8  work over coutnt:  2 over matrices 69662 and 63037 added to matrix 79622
+Process  5435 waiting for checkout ,main multiplication task completed
+
+Process  5435 entered for checkout ,main multiplication task completed
+
+Worker  3  work over coutnt:  3 over matrices 69662 and 63037 added to matrix 79622
+Process  5433 waiting for checkout ,main multiplication task completed
+
+Process  5433 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  4 over matrices 69662 and 63037 added to matrix 79622
+Process  5436 waiting for checkout ,main multiplication task completed
+
+Process  5436 entered for checkout ,main multiplication task completed
+
+Worker  4  work over coutnt:  5 over matrices 69662 and 63037 added to matrix 79622
+Process  5441 waiting for checkout ,main multiplication task completed
+
+Process  5441 entered for checkout ,main multiplication task completed
+
+Worker  9  work over coutnt:  6 over matrices 69662 and 63037 added to matrix 79622
+Process  5439 waiting for checkout ,main multiplication task completed
+
+Process  5439 entered for checkout ,main multiplication task completed
+
+Worker  7  work over coutnt:  7 over matrices 69662 and 63037 added to matrix 79622
+Process  5438 waiting for checkout ,main multiplication task completed
+
+Process  5438 entered for checkout ,main multiplication task completed
+
+Worker  6  work over coutnt:  8 over matrices 69662 and 63037 added to matrix 79622
+Matrix 69662,63037 popped by worker 6Job Done: 4 
+
+Worker 1 working on Matrix  34810 79622 ... 0 0 0 0
+After Updattion,Matrix 34810 --> 0 0 Matrix 79622 --> 0 500
+-----Job Generated--WorkerId:1--PID:5433--MatrixID:45885-----
+Worker 1 mutex over 1
+Enter mult pid  5433
+Worker 5 working on Matrix  34810 79622 ... 0 0 0 500
+After Updattion,Matrix 34810 --> 500 0 Matrix 79622 --> 0 0
+Worker 5 mutex over 1
+Enter mult pid  5437
+Worker 9 working on Matrix  34810 79622 ... 500 0 0 0
+After Updattion,Matrix 34810 --> 500 0 Matrix 79622 --> 0 500
+Worker 9 mutex over 1
+Enter mult pid  5441
+Worker 10 working on Matrix  34810 79622 ... 500 0 0 500
+After Updattion,Matrix 34810 --> 0 500 Matrix 79622 --> 500 0
+Worker 10 mutex over 1
+Enter mult pid  5442
+Worker 2 working on Matrix  34810 79622 ... 0 500 500 0
+After Updattion,Matrix 34810 --> 0 500 Matrix 79622 --> 500 500
+Worker 2 mutex over 1
+Enter mult pid  5434
+Worker 4 working on Matrix  34810 79622 ... 0 500 500 500
+After Updattion,Matrix 34810 --> 500 500 Matrix 79622 --> 500 0
+Worker 4 mutex over 1
+Enter mult pid  5436
+Worker 8 working on Matrix  34810 79622 ... 500 500 500 0
+After Updattion,Matrix 34810 --> 500 500 Matrix 79622 --> 500 500
+Worker 8 mutex over 1
+Enter mult pid  5440
+Worker 3 working on Matrix  34810 79622 ... 500 500 500 500
+After Updattion,Matrix 34810 --> 500 1000 Matrix 79622 --> 1000 500
+Worker 3 mutex over 1
+Enter mult pid  5435
+Exit mult pid  5441
+Exit mult pid  5436
+Exit mult pid  5437
+Exit mult pid  5442
+Exit mult pid  5433
+Exit mult pid  5434
+Exit mult pid  5440
+Process  5440 waiting for checkout ,main multiplication task completed
+
+Process  5440 entered for checkout ,main multiplication task completed
+
+Worker  8  work over coutnt:  1 over matrices 34810 and 79622 added to matrix 45885
+Exit mult pid  5435
+Process  5436 waiting for checkout ,main multiplication task completed
+
+Process  5436 entered for checkout ,main multiplication task completed
+
+Worker  4  work over coutnt:  2 over matrices 34810 and 79622 added to matrix 45885
+Process  5435 waiting for checkout ,main multiplication task completed
+
+Process  5435 entered for checkout ,main multiplication task completed
+
+Worker  3  work over coutnt:  3 over matrices 34810 and 79622 added to matrix 45885
+Process  5441 waiting for checkout ,main multiplication task completed
+
+Process  5441 entered for checkout ,main multiplication task completed
+
+Worker  9  work over coutnt:  4 over matrices 34810 and 79622 added to matrix 45885
+Process  5437 waiting for checkout ,main multiplication task completed
+
+Process  5437 entered for checkout ,main multiplication task completed
+
+Worker  5  work over coutnt:  5 over matrices 34810 and 79622 added to matrix 45885
+Process  5442 waiting for checkout ,main multiplication task completed
+
+Process  5442 entered for checkout ,main multiplication task completed
+
+Worker  10  work over coutnt:  6 over matrices 34810 and 79622 added to matrix 45885
+Process  5434 waiting for checkout ,main multiplication task completed
+
+Process  5434 entered for checkout ,main multiplication task completed
+
+Worker  2  work over coutnt:  7 over matrices 34810 and 79622 added to matrix 45885
+Process  5433 waiting for checkout ,main multiplication task completed
+
+Process  5433 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  8 over matrices 34810 and 79622 added to matrix 45885
+Matrix 34810,79622 popped by worker 1Job Done: 6 
+
+Main Diagonal Sum: -1543546408Time Taken: 14460056
+anurat@anurat-Inspiron-3576:~/OS/assgn3$ 
+
+
+anurat@anurat-Inspiron-3576:~/OS/assgn3$ ./a.out
+Enter number of producers and consumers respectively:4 1
+Enter number of matrices to multiply:2
+-----Job Generated--ProdId:1--PID:5571--MatrixID:42887-----
+-----Job Generated--ProdId:2--PID:5572--MatrixID:56347-----
+Worker 1 working on Matrix  42887 56347 ... 0 0 0 0
+After Updattion,Matrix 42887 --> 0 0 Matrix 56347 --> 0 500
+-----Job Generated--WorkerId:1--PID:5575--MatrixID:16275-----
+Worker 1 mutex over 1
+Enter mult pid  5575
+Exit mult pid  5575
+Process  5575 waiting for checkout ,main multiplication task completed
+
+Process  5575 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  1 over matrices 42887 and 56347 added to matrix 16275
+Worker 1 working on Matrix  42887 56347 ... 0 0 0 500
+After Updattion,Matrix 42887 --> 500 0 Matrix 56347 --> 0 0
+Worker 1 mutex over 1
+Enter mult pid  5575
+Exit mult pid  5575
+Process  5575 waiting for checkout ,main multiplication task completed
+
+Process  5575 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  2 over matrices 42887 and 56347 added to matrix 16275
+Worker 1 working on Matrix  42887 56347 ... 500 0 0 0
+After Updattion,Matrix 42887 --> 500 0 Matrix 56347 --> 0 500
+Worker 1 mutex over 1
+Enter mult pid  5575
+Exit mult pid  5575
+Process  5575 waiting for checkout ,main multiplication task completed
+
+Process  5575 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  3 over matrices 42887 and 56347 added to matrix 16275
+Worker 1 working on Matrix  42887 56347 ... 500 0 0 500
+After Updattion,Matrix 42887 --> 0 500 Matrix 56347 --> 500 0
+Worker 1 mutex over 1
+Enter mult pid  5575
+Exit mult pid  5575
+Process  5575 waiting for checkout ,main multiplication task completed
+
+Process  5575 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  4 over matrices 42887 and 56347 added to matrix 16275
+Worker 1 working on Matrix  42887 56347 ... 0 500 500 0
+After Updattion,Matrix 42887 --> 0 500 Matrix 56347 --> 500 500
+Worker 1 mutex over 1
+Enter mult pid  5575
+Exit mult pid  5575
+Process  5575 waiting for checkout ,main multiplication task completed
+
+Process  5575 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  5 over matrices 42887 and 56347 added to matrix 16275
+Worker 1 working on Matrix  42887 56347 ... 0 500 500 500
+After Updattion,Matrix 42887 --> 500 500 Matrix 56347 --> 500 0
+Worker 1 mutex over 1
+Enter mult pid  5575
+Exit mult pid  5575
+Process  5575 waiting for checkout ,main multiplication task completed
+
+Process  5575 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  6 over matrices 42887 and 56347 added to matrix 16275
+Worker 1 working on Matrix  42887 56347 ... 500 500 500 0
+After Updattion,Matrix 42887 --> 500 500 Matrix 56347 --> 500 500
+Worker 1 mutex over 1
+Enter mult pid  5575
+Exit mult pid  5575
+Process  5575 waiting for checkout ,main multiplication task completed
+
+Process  5575 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  7 over matrices 42887 and 56347 added to matrix 16275
+Worker 1 working on Matrix  42887 56347 ... 500 500 500 500
+After Updattion,Matrix 42887 --> 500 1000 Matrix 56347 --> 1000 500
+Worker 1 mutex over 1
+Enter mult pid  5575
+Exit mult pid  5575
+Process  5575 waiting for checkout ,main multiplication task completed
+
+Process  5575 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  8 over matrices 42887 and 56347 added to matrix 16275
+Matrix 42887,56347 popped by worker 1Job Done: 2 
+
+Main Diagonal Sum: 30145Time Taken: 35871047
+anurat@anurat-Inspiron-3576:~/OS/assgn3$ 
+
+
+
+anurat@anurat-Inspiron-3576:~/OS/assgn3$ ./a.out
+Enter number of producers and consumers respectively:5 7
+Enter number of matrices to multiply:4
+-----Job Generated--ProdId:1--PID:5609--MatrixID:21212-----
+-----Job Generated--ProdId:3--PID:5611--MatrixID:39293-----
+Worker 1 working on Matrix  21212 39293 ... 0 0 0 0
+After Updattion,Matrix 21212 --> 0 0 Matrix 39293 --> 0 500
+-----Job Generated--WorkerId:1--PID:5614--MatrixID:68695-----
+Worker 1 mutex over 1
+Enter mult pid  5614
+Worker 2 working on Matrix  21212 39293 ... 0 0 0 500
+After Updattion,Matrix 21212 --> 500 0 Matrix 39293 --> 0 0
+Worker 2 mutex over 1
+Enter mult pid  5615
+Worker 7 working on Matrix  21212 39293 ... 500 0 0 0
+After Updattion,Matrix 21212 --> 500 0 Matrix 39293 --> 0 500
+Worker 7 mutex over 1
+Enter mult pid  5620
+Exit mult pid  5614
+Process  5614 waiting for checkout ,main multiplication task completed
+
+Process  5614 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  1 over matrices 21212 and 39293 added to matrix 68695
+Exit mult pid  5620
+Process  5620 waiting for checkout ,main multiplication task completed
+
+Process  5620 entered for checkout ,main multiplication task completed
+
+Worker  7  work over coutnt:  2 over matrices 21212 and 39293 added to matrix 68695
+Exit mult pid  5615
+Process  5615 waiting for checkout ,main multiplication task completed
+
+Process  5615 entered for checkout ,main multiplication task completed
+
+Worker  2  work over coutnt:  3 over matrices 21212 and 39293 added to matrix 68695
+Worker 2 working on Matrix  21212 39293 ... 500 0 0 500
+After Updattion,Matrix 21212 --> 0 500 Matrix 39293 --> 500 0
+Worker 2 mutex over 1
+Enter mult pid  5615
+Worker 6 working on Matrix  21212 39293 ... 0 500 500 0
+After Updattion,Matrix 21212 --> 0 500 Matrix 39293 --> 500 500
+Worker 6 mutex over 1
+Enter mult pid  5619
+Exit mult pid  5615
+Process  5615 waiting for checkout ,main multiplication task completed
+
+Process  5615 entered for checkout ,main multiplication task completed
+
+Worker  2  work over coutnt:  4 over matrices 21212 and 39293 added to matrix 68695
+Worker 2 working on Matrix  21212 39293 ... 0 500 500 500
+After Updattion,Matrix 21212 --> 500 500 Matrix 39293 --> 500 0
+Worker 2 mutex over 1
+Enter mult pid  5615
+-----Job Generated--ProdId:2--PID:5610--MatrixID:7996-----
+-----Job Generated--ProdId:4--PID:5612--MatrixID:2777-----
+Exit mult pid  5619
+Exit mult pid  5615
+Process  5615 waiting for checkout ,main multiplication task completed
+
+Process  5615 entered for checkout ,main multiplication task completed
+
+Worker  2  work over coutnt:  5 over matrices 21212 and 39293 added to matrix 68695
+Worker 3 working on Matrix  21212 39293 ... 500 500 500 0
+After Updattion,Matrix 21212 --> 500 500 Matrix 39293 --> 500 500
+Worker 3 mutex over 1
+Enter mult pid  5616
+Worker 4 working on Matrix  21212 39293 ... 500 500 500 500
+After Updattion,Matrix 21212 --> 500 1000 Matrix 39293 --> 1000 500
+Worker 4 mutex over 1
+Enter mult pid  5617
+Exit mult pid  5617
+Exit mult pid  5616
+Process  5616 waiting for checkout ,main multiplication task completed
+
+Process  5616 entered for checkout ,main multiplication task completed
+
+Worker  3  work over coutnt:  6 over matrices 21212 and 39293 added to matrix 68695
+Process  5619 waiting for checkout ,main multiplication task completed
+
+Process  5619 entered for checkout ,main multiplication task completed
+
+Worker  6  work over coutnt:  7 over matrices 21212 and 39293 added to matrix 68695
+Process  5617 waiting for checkout ,main multiplication task completed
+
+Process  5617 entered for checkout ,main multiplication task completed
+
+Worker  4  work over coutnt:  8 over matrices 21212 and 39293 added to matrix 68695
+Matrix 21212,39293 popped by worker 4Job Done: 2 
+
+Worker 5 working on Matrix  68695 7996 ... 0 0 0 0
+After Updattion,Matrix 68695 --> 0 0 Matrix 7996 --> 0 500
+-----Job Generated--WorkerId:5--PID:5618--MatrixID:28872-----
+Worker 5 mutex over 1
+Enter mult pid  5618
+Worker 2 working on Matrix  68695 7996 ... 0 0 0 500
+After Updattion,Matrix 68695 --> 500 0 Matrix 7996 --> 0 0
+Worker 2 mutex over 1
+Enter mult pid  5615
+Worker 1 working on Matrix  68695 7996 ... 500 0 0 0
+After Updattion,Matrix 68695 --> 500 0 Matrix 7996 --> 0 500
+Worker 1 mutex over 1
+Enter mult pid  5614
+Worker 7 working on Matrix  68695 7996 ... 500 0 0 500
+After Updattion,Matrix 68695 --> 0 500 Matrix 7996 --> 500 0
+Worker 7 mutex over 1
+Enter mult pid  5620
+Worker 4 working on Matrix  68695 7996 ... 0 500 500 0
+After Updattion,Matrix 68695 --> 0 500 Matrix 7996 --> 500 500
+Worker 4 mutex over 1
+Enter mult pid  5617
+Exit mult pid  5615
+Exit mult pid  5614
+Exit mult pid  5617
+Exit mult pid  5620
+Exit mult pid  5618
+Worker 3 working on Matrix  68695 7996 ... 0 500 500 500
+After Updattion,Matrix 68695 --> 500 500 Matrix 7996 --> 500 0
+Worker 3 mutex over 1
+Enter mult pid  5616
+Worker 6 working on Matrix  68695 7996 ... 500 500 500 0
+After Updattion,Matrix 68695 --> 500 500 Matrix 7996 --> 500 500
+Worker 6 mutex over 1
+Enter mult pid  5619
+Exit mult pid  5616
+Exit mult pid  5619
+Process  5618 waiting for checkout ,main multiplication task completed
+
+Process  5618 entered for checkout ,main multiplication task completed
+
+Worker  5  work over coutnt:  1 over matrices 68695 and 7996 added to matrix 28872
+Process  5615 waiting for checkout ,main multiplication task completed
+
+Process  5615 entered for checkout ,main multiplication task completed
+
+Worker  2  work over coutnt:  2 over matrices 68695 and 7996 added to matrix 28872
+Process  5616 waiting for checkout ,main multiplication task completed
+
+Process  5616 entered for checkout ,main multiplication task completed
+
+Worker  3  work over coutnt:  3 over matrices 68695 and 7996 added to matrix 28872
+Process  5617 waiting for checkout ,main multiplication task completed
+
+Process  5617 entered for checkout ,main multiplication task completed
+
+Worker  4  work over coutnt:  4 over matrices 68695 and 7996 added to matrix 28872
+Worker 4 working on Matrix  68695 7996 ... 500 500 500 500
+After Updattion,Matrix 68695 --> 500 1000 Matrix 7996 --> 1000 500
+Worker 4 mutex over 1
+Enter mult pid  5617
+Exit mult pid  5617
+Process  5614 waiting for checkout ,main multiplication task completed
+
+Process  5614 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  5 over matrices 68695 and 7996 added to matrix 28872
+Process  5619 waiting for checkout ,main multiplication task completed
+
+Process  5619 entered for checkout ,main multiplication task completed
+
+Worker  6  work over coutnt:  6 over matrices 68695 and 7996 added to matrix 28872
+Process  5620 waiting for checkout ,main multiplication task completed
+
+Process  5620 entered for checkout ,main multiplication task completed
+
+Worker  7  work over coutnt:  7 over matrices 68695 and 7996 added to matrix 28872
+Process  5617 waiting for checkout ,main multiplication task completed
+
+Process  5617 entered for checkout ,main multiplication task completed
+
+Worker  4  work over coutnt:  8 over matrices 68695 and 7996 added to matrix 28872
+Matrix 68695,7996 popped by worker 4Job Done: 4 
+
+Worker 5 working on Matrix  2777 28872 ... 0 0 0 0
+After Updattion,Matrix 2777 --> 0 0 Matrix 28872 --> 0 500
+-----Job Generated--WorkerId:5--PID:5618--MatrixID:54916-----
+Worker 5 mutex over 1
+Enter mult pid  5618
+Worker 7 working on Matrix  2777 28872 ... 0 0 0 500
+After Updattion,Matrix 2777 --> 500 0 Matrix 28872 --> 0 0
+Worker 7 mutex over 1
+Enter mult pid  5620
+Worker 1 working on Matrix  2777 28872 ... 500 0 0 0
+After Updattion,Matrix 2777 --> 500 0 Matrix 28872 --> 0 500
+Worker 1 mutex over 1
+Enter mult pid  5614
+Exit mult pid  5614
+Exit mult pid  5618
+Exit mult pid  5620
+Worker 2 working on Matrix  2777 28872 ... 500 0 0 500
+After Updattion,Matrix 2777 --> 0 500 Matrix 28872 --> 500 0
+Worker 2 mutex over 1
+Enter mult pid  5615
+Worker 3 working on Matrix  2777 28872 ... 0 500 500 0
+After Updattion,Matrix 2777 --> 0 500 Matrix 28872 --> 500 500
+Worker 3 mutex over 1
+Enter mult pid  5616
+Worker 4 working on Matrix  2777 28872 ... 0 500 500 500
+After Updattion,Matrix 2777 --> 500 500 Matrix 28872 --> 500 0
+Worker 4 mutex over 1
+Enter mult pid  5617
+Exit mult pid  5615
+Process  5615 waiting for checkout ,main multiplication task completed
+
+Process  5615 entered for checkout ,main multiplication task completed
+
+Worker  2  work over coutnt:  1 over matrices 2777 and 28872 added to matrix 54916
+Exit mult pid  5616
+Exit mult pid  5617
+Process  5614 waiting for checkout ,main multiplication task completed
+
+Process  5614 entered for checkout ,main multiplication task completed
+
+Worker  1  work over coutnt:  2 over matrices 2777 and 28872 added to matrix 54916
+Process  5618 waiting for checkout ,main multiplication task completed
+
+Process  5618 entered for checkout ,main multiplication task completed
+
+Worker  5  work over coutnt:  3 over matrices 2777 and 28872 added to matrix 54916
+Worker 5 working on Matrix  2777 28872 ... 500 500 500 0
+After Updattion,Matrix 2777 --> 500 500 Matrix 28872 --> 500 500
+Worker 5 mutex over 1
+Enter mult pid  5618
+Process  5620 waiting for checkout ,main multiplication task completed
+
+Process  5620 entered for checkout ,main multiplication task completed
+
+Worker  7  work over coutnt:  4 over matrices 2777 and 28872 added to matrix 54916
+Worker 6 working on Matrix  2777 28872 ... 500 500 500 500
+After Updattion,Matrix 2777 --> 500 1000 Matrix 28872 --> 1000 500
+Worker 6 mutex over 1
+Enter mult pid  5619
+Exit mult pid  5618
+Process  5618 waiting for checkout ,main multiplication task completed
+
+Process  5618 entered for checkout ,main multiplication task completed
+
+Worker  5  work over coutnt:  5 over matrices 2777 and 28872 added to matrix 54916
+Exit mult pid  5619
+Process  5616 waiting for checkout ,main multiplication task completed
+
+Process  5616 entered for checkout ,main multiplication task completed
+
+Worker  3  work over coutnt:  6 over matrices 2777 and 28872 added to matrix 54916
+Process  5619 waiting for checkout ,main multiplication task completed
+
+Process  5619 entered for checkout ,main multiplication task completed
+
+Worker  6  work over coutnt:  7 over matrices 2777 and 28872 added to matrix 54916
+Process  5617 waiting for checkout ,main multiplication task completed
+
+Process  5617 entered for checkout ,main multiplication task completed
+
+Worker  4  work over coutnt:  8 over matrices 2777 and 28872 added to matrix 54916
+Matrix 2777,28872 popped by worker 4Job Done: 6 
+
+Main Diagonal Sum: -1333762592Time Taken: 17515152
+anurat@anurat-Inspiron-3576:~/OS/assgn3$ 
